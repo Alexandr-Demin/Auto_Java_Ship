@@ -127,7 +127,7 @@ public class CreateAdresTest extends BaseTest {
 
     }
     @Test
-    @QaseId(6)
+//    @QaseId(6)
     public void createPrivateGroupScoop(){
         basePage.open("http://45.8.248.89:5500/");
 
