@@ -3,10 +3,9 @@ package tests.base;
 import common.CommonAction;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
-import pages.adres.CreatPublickAdressLocker;
+import pages.adres.*;
 import pages.base.BasePage;
 import pages.shiphappens.Autorization;
-import pages.adres.CreatPublickAdress;
 
 public class BaseTest {
     protected WebDriver driver = CommonAction.createDriver();
@@ -14,6 +13,14 @@ public class BaseTest {
     protected Autorization autorization = new Autorization(driver);
     protected CreatPublickAdress creatPublickAdress = new CreatPublickAdress(driver);
     protected CreatPublickAdressLocker creatPublickAdressLocker = new CreatPublickAdressLocker(driver);
+    protected CreatPublickAdresScoop creatPublickAdresScoop = new CreatPublickAdresScoop(driver);
+    protected CreatPrivateAdres creatPrivateAdres = new CreatPrivateAdres(driver);
+    protected CreatPrivateAdresLocker creatPrivateAdresLocker = new CreatPrivateAdresLocker(driver);
+    protected CreatPrivateAdresScoop creatPrivateAdresScoop = new CreatPrivateAdresScoop(driver);
+    protected CreatePrivateGroupAdres createPrivateGroupAdres = new CreatePrivateGroupAdres(driver);
+    protected CreatePrivateGroupLocker createPrivateGroupLocker = new CreatePrivateGroupLocker(driver);
+    protected CreatPrivateGroupScoop createPrivateGroupScoop = new CreatPrivateGroupScoop(driver);
+
 
     @AfterSuite(alwaysRun = true)
     public void quit() {

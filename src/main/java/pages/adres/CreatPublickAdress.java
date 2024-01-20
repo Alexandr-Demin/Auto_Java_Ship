@@ -38,8 +38,8 @@ public class CreatPublickAdress extends BasePage{
     public CreatPublickAdress creatPublickAdress(){
         waitElementWisible(driver.findElement(countryEmoji));
         driver.findElement(countryEmoji).click();
-        driver.findElement(countryEmoji).sendKeys("Flag");
-        driver.findElement(name).sendKeys("Test Adres");
+        driver.findElement(countryEmoji).sendKeys("\uD83C\uDDFA\uD83C\uDDF8");
+        driver.findElement(name).sendKeys("Публичный адрес");
         driver.findElement(location).sendKeys("Address: ZIP: SE15 3SQ, CITY: London, STREET: 3 Magdalene close /// NAME: Chantal Fennell, PHONE: 07495773531");
         return this;
     }

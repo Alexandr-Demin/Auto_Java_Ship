@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pages.adres.CreatPublickAdress;
 
+import java.time.Duration;
+
 public class Autorization extends CreatPublickAdress {
     public Autorization(WebDriver driver) {
         super(driver);
@@ -16,6 +18,7 @@ public class Autorization extends CreatPublickAdress {
 
 
     public Autorization autorizationSuperAdmin() {
+
 
         waitElementWisible(driver.findElement(userName));
         driver.findElement(userName).click();
