@@ -19,19 +19,19 @@ public class CreateAdresTest extends BaseTest {
                 .enterSave()
                 .addedRole();
    }
-//    @Test
-//    public void creatPublickAdresLocker(){
-//       basePage.open("http://45.8.248.89:5500/");
-//
-//        autorization
-//                .autorizationSuperAdmin();
-//
-//        creatPublickAdressLocker
-//                .enterAdres()
-//                .creatPublickAdress()
-//                .enterSave()
-//                .addedRole();
-//
-//    }
+    @Test
+    public void creatPublickAdresLocker(){
+       basePage.open("http://45.8.248.89:5500/");
+
+        autorization
+                .autorizationSuperAdmin();
+
+        creatPublickAdressLocker
+                .enterAdres()
+                .creatPublickAdress()
+                .enterSave()
+                .addedRole();
+
+    }
 
 }

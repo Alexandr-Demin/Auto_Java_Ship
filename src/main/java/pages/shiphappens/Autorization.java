@@ -16,6 +16,8 @@ public class Autorization extends CreatPublickAdress {
 
 
     public Autorization autorizationSuperAdmin() {
+
+        waitElementWisible(driver.findElement(userName));
         driver.findElement(userName).click();
         driver.findElement(userName).sendKeys("sadmin");
 
