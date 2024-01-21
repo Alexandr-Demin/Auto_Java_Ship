@@ -32,9 +32,9 @@ jobs:
           java-version: 1.11
       - name: create_addresses
         if: "github.event.inputs.deployment_target == 'create_addresses'"
-        run: mvn clean test -Dtest=CreateAdresTest
+        run: mvn test -Dtest=CreateAdresTest
       - name: click_required
         if: "github.event.inputs.deployment_target == 'click_required'"
-        run: mvn clean test -Dtest=ClickRequest
+        run: mvn test -Dtest=ClickRequest
 
 
