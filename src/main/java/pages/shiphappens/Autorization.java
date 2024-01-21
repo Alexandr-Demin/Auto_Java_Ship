@@ -43,27 +43,27 @@ public class Autorization extends CreatPublickAdress {
         return this;
 
     }
-//    public Autorization autorizationLogist1(){
-//        driver.findElement(userName).click();
-//        driver.findElement(userName).sendKeys("lg_1");
-//
-//        driver.findElement(password).click();
-//        driver.findElement(password).sendKeys("123456");
-//
-//        driver.findElement(enterLogin).click();
-//        return this;
-//
-//    }
-//    public Autorization autorizationLogist2() {
-//        driver.findElement(userName).click();
-//        driver.findElement(userName).sendKeys("lg_2");
-//
-//        driver.findElement(password).click();
-//        driver.findElement(password).sendKeys("123456");
-//
-//        driver.findElement(enterLogin).click();
-//        return this;
-//    }
+    public Autorization autorizationLogist1(){
+        driver.findElement(userName).click();
+        driver.findElement(userName).sendKeys("lg_1");
+
+        driver.findElement(password).click();
+        driver.findElement(password).sendKeys("123456");
+
+        driver.findElement(enterLogin).click();
+        return this;
+
+    }
+   public Autorization autorizationLogist2() {
+        driver.findElement(userName).click();
+       driver.findElement(userName).sendKeys("lg_2");
+
+        driver.findElement(password).click();
+       driver.findElement(password).sendKeys("123456");
+
+       driver.findElement(enterLogin).click();
+        return this;
+    }
 
 
 }
