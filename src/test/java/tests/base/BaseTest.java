@@ -6,6 +6,7 @@ import org.testng.annotations.AfterSuite;
 import pages.adres.*;
 import pages.base.BasePage;
 import pages.shiphappens.Autorization;
+import pages.withdrawalRrequests.CliclRequest;
 
 public class BaseTest {
     protected WebDriver driver = CommonAction.createDriver();
@@ -20,6 +21,7 @@ public class BaseTest {
     protected CreatePrivateGroupAdres createPrivateGroupAdres = new CreatePrivateGroupAdres(driver);
     protected CreatePrivateGroupLocker createPrivateGroupLocker = new CreatePrivateGroupLocker(driver);
     protected CreatPrivateGroupScoop createPrivateGroupScoop = new CreatPrivateGroupScoop(driver);
+    protected CliclRequest cliclRequest = new CliclRequest(driver);
 
 
     @AfterSuite(alwaysRun = true)

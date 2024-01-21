@@ -1,6 +1,7 @@
 package tests.creatadres;
 
 import io.qase.api.annotation.QaseId;
+import io.qase.api.annotation.QaseTitle;
 import org.testng.annotations.Test;
 import tests.base.BaseTest;
 
@@ -127,7 +128,7 @@ public class CreateAdresTest extends BaseTest {
 
     }
     @Test
-//    @QaseId(6)
+
     public void createPrivateGroupScoop(){
         basePage.open("http://45.8.248.89:5500/");
 
@@ -142,4 +143,5 @@ public class CreateAdresTest extends BaseTest {
                 .addedRole();
 
     }
+
 }
