@@ -10,7 +10,7 @@ import tests.base.BaseTest;
 public class ClickRequest extends BaseTest {
 
     @Test
-    @QaseTitle("Создание публичного адреса с локером")
+    @QaseTitle("https://app.qase.io/case/TB-6")
     public void CliclRequest(){
         basePage.open("http://45.8.248.89:5500/");
 
