@@ -17,6 +17,7 @@ import static common.Config.PLATFORM_AND_BROWSER;
 public class CommonAction {
     private static WebDriver driver = null;
 
+
     private CommonAction(){
     }
     public static WebDriver createDriver() {         /// Дергаем драйвер отсюда через класс в базовый класс тестов (BaseTest)
