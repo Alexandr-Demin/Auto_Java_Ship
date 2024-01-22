@@ -18,6 +18,24 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <testngXML>testng.xml</testngXML>
     </properties>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>3.0.0</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>index</report>
+                            <report>licenses</report>
+                            <report>dependency-info</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
     <build>
         <plugins>
             <plugin>
@@ -74,8 +92,6 @@
             <artifactId>lombok</artifactId>
             <version>1.18.30</version>
         </dependency>
-
-
     </dependencies>
 
 
