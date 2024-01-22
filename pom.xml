@@ -59,7 +59,21 @@
             <artifactId>selenium-remote-driver</artifactId>
             <version>4.16.1</version>
         </dependency>
-        
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>5.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.qase</groupId>
+            <artifactId>qase-api</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version>
+        </dependency>
 
 
     </dependencies>
