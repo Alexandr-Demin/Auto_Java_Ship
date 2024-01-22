@@ -36,9 +36,10 @@ jobs:
           cache: maven
       - name: create_addresses
         if: "github.event.inputs.deployment_target == 'create_addresses'"
-        run: mvn clean test -Dtest=CreateAdresTest
+        run: mvn clean test -DtestngXML=testng.xml
       - name: click_required
         if: "github.event.inputs.deployment_target == 'click_required'"
-        run: mvn clean test -Dtest=ClickRequest
+        run: mvn clean test -DtestngXML=testng2.xml
+
 
 
