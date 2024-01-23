@@ -8,6 +8,8 @@ public class ClickRequest extends BaseTest {
     @Test
     @QaseId(6)
     public void CliclRequest(){
+        //driver.manage().deleteAllCookies();
+
         basePage.open("http://45.8.248.89:5500/");
 
 

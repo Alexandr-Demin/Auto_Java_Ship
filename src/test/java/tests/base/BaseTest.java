@@ -1,12 +1,16 @@
 package tests.base;
 
 import common.CommonAction;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import pages.adres.*;
 import pages.base.BasePage;
 import pages.shiphappens.Autorization;
 import pages.withdrawalRrequests.CliclRequest;
+
+import java.util.Set;
 
 public class BaseTest {
     protected WebDriver driver = CommonAction.createDriver();
@@ -22,6 +26,21 @@ public class BaseTest {
     protected CreatePrivateGroupLocker createPrivateGroupLocker = new CreatePrivateGroupLocker(driver);
     protected CreatPrivateGroupScoop createPrivateGroupScoop = new CreatPrivateGroupScoop(driver);
     protected CliclRequest cliclRequest = new CliclRequest(driver);
+
+//    protected void switchWindow(){
+//        JavascriptExecutor js = (JavascriptExecutor) driver;
+//        String window1 = driver.getWindowHandle();
+//        js.executeScript("window.open()");
+//        Set<String> currentWindows = driver.getWindowHandles();
+//        driver.findElement(By.linkText("new window")).click();
+//        String window2 = null;
+//        for(String window : currentWindows){
+//            if(!window.equals(window1)){
+//                window2 = window;
+//                break;
+//            }
+//        }
+//    }
 
 
     @AfterSuite(alwaysRun = true)

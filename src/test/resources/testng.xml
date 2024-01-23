@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="8" preserve-order="true" name="Creat Adres">
+    <test verbose="2" preserve-order="true" name="Click Required">
         <classes>
-            <class name="tests.creatadres.CreateAdresTest"></class>
+            <class name="tests.withdrawalRequests.ClickRequest"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Creat Adres">
+        <classes>
+            <class name="tests.creatadres.CreateAdresTest">
+            </class>
     </classes>
     </test>
 </suite>

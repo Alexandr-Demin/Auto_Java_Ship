@@ -19,6 +19,7 @@ on:
         options:
           - create_addresses
           - click_required
+          - All_Test
 
 
 jobs:
@@ -36,10 +37,15 @@ jobs:
           cache: maven
       - name: create_addresses
         if: "github.event.inputs.deployment_target == 'create_addresses'"
-        run: mvn clean test -DtestngXML=testng.xml
+        run: mvn clean test -Dtest="CreateAdresTest"
       - name: click_required
         if: "github.event.inputs.deployment_target == 'click_required'"
-        run: mvn clean test -DtestngXML=testng2.xml
+        run: mvn clean test -Dtest="ClickRequest"
+      - name: All_Test
+        if: "github.event.inputs.deployment_target == 'click_required'"
+        run: mvn clean test
+
+
 
 
 
