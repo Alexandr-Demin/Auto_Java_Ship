@@ -19,6 +19,8 @@
         <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
         <testngXML>testng.xml</testngXML>
         <allure.version>2.24.0</allure.version>
+        <name>allure.results.directory</name>
+        <value>D:\Auto_Admin\Admin_Ship_Auto\target\allure-results</value>
     </properties>
     <reporting>
         <plugins>
@@ -119,5 +121,7 @@
             <type>pom</type>
             <scope>import</scope>
         </dependency>
+
+
     </dependencies>
 </project>
