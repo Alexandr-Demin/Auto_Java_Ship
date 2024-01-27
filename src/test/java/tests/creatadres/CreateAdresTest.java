@@ -1,7 +1,6 @@
 package tests.creatadres;
 
-import io.qase.api.annotation.QaseId;
-import io.qase.api.annotation.QaseTitle;
+
 import org.testng.annotations.Test;
 import tests.base.BaseTest;
 

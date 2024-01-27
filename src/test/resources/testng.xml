@@ -3,12 +3,15 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="Click Required">
         <classes>
-            <class name="tests.withdrawalRequests.ClickRequestTest"/>
+            <class name="tests.withdrawalRequests.ClickRequestTests"/>
         </classes>
     </test>
     <test verbose="2" preserve-order="true" name="Creat Adres">
         <classes>
             <class name="tests.creatadres.CreateAdresTest">
+                <methods>
+                    <include name="loginTest"/>
+                </methods>
             </class>
     </classes>
     </test>
