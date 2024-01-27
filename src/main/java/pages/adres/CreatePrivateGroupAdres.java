@@ -26,6 +26,10 @@ public class CreatePrivateGroupAdres extends BasePage {
     By AssignManager = By.cssSelector("#root > div > section > section > main > div > div > div.ant-pro-grid-content > div > div > div.ant-tabs-bar.ant-tabs-top-bar.ant-tabs-default-bar > div > div > div > div > div:nth-child(1) > div:nth-child(3)");
     By addedAdmin = By.cssSelector("#root > div > section > section > main > div > div > div.ant-pro-grid-content > div > div > div.ant-tabs-content.ant-tabs-content-animated.ant-tabs-top-content > div.ant-tabs-tabpane.ant-tabs-tabpane-active > div:nth-child(2) > div > div > div > div.antd-pro-components-standard-table-index-standardTable > div > div > div > div > div > div > table > tbody > tr:nth-child(4) > td:nth-child(8) > a:nth-child(1)");
     By addedLogist = By.cssSelector("#root > div > section > section > main > div > div > div.ant-pro-grid-content > div > div > div.ant-tabs-content.ant-tabs-content-animated.ant-tabs-top-content > div.ant-tabs-tabpane.ant-tabs-tabpane-active > div:nth-child(2) > div > div > div > div.antd-pro-components-standard-table-index-standardTable > div > div > div > div > div > div > table > tbody > tr:nth-child(1) > td:nth-child(8) > a:nth-child(3)");
+
+    By searchLogist = By.cssSelector("#root > div > section > section > main > div > div > div.ant-pro-grid-content > div > div > div.ant-tabs-content.ant-tabs-content-animated.ant-tabs-top-content > div.ant-tabs-tabpane.ant-tabs-tabpane-active > div:nth-child(2) > div > div > div > div.antd-pro-components-standard-table-index-standardTable > div > div > div > div > div > div > table > tbody > tr:nth-child(5) > td:nth-child(1)");
+    By searchAdmin = By.cssSelector("#root > div > section > section > main > div > div > div.ant-pro-grid-content > div > div > div.ant-tabs-content.ant-tabs-content-animated.ant-tabs-top-content > div.ant-tabs-tabpane.ant-tabs-tabpane-active > div:nth-child(2) > div > div > div > div.antd-pro-components-standard-table-index-standardTable > div > div > div > div > div > div > table > tbody > tr:nth-child(4) > td:nth-child(1)");
+
     public CreatePrivateGroupAdres enterAdres(){
         waitElementWisible(driver.findElement(btnAdres));
         driver.findElement(btnAdres).click();
@@ -50,6 +54,7 @@ public class CreatePrivateGroupAdres extends BasePage {
         waitElementWisible(driver.findElement(AssignManager));
         driver.findElement(AssignManager).click();
         driver.findElement(addedAdmin).click();
+
         driver.findElement(addedLogist).click();
         return this;
     }

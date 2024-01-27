@@ -14,10 +14,10 @@ public class CliclRequest extends BasePage {
 
 
 
-    public CliclRequest openRequest(){
+    public CliclRequest openRequestpage(){
         waitElementWisible(driver.findElement(clickRequest));
         driver.findElement(clickRequest).click();
-        driver.findElement(clickID).click();
+//        driver.findElement(clickID).click();
         return this;
 
 

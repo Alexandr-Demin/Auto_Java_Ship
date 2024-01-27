@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="Click Required">
         <classes>
-            <class name="tests.withdrawalRequests.ClickRequest"/>
+            <class name="tests.withdrawalRequests.ClickRequestTest"/>
         </classes>
     </test>
     <test verbose="2" preserve-order="true" name="Creat Adres">
