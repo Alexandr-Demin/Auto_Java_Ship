@@ -9,7 +9,7 @@ public class CreateAdresTest extends BaseTest {
     @Test
     public void createPublickAdres(){
 
-        basePage.open("http://45.8.248.89:5500/");
+        basePage.open("http://81.163.27.121:5500/");
 
 
         autorization
@@ -23,7 +23,7 @@ public class CreateAdresTest extends BaseTest {
    }
     @Test
     public void creatPublickAdresLocker(){
-       basePage.open("http://45.8.248.89:5500/");
+       basePage.open("http://81.163.27.121:5500/");
 
 
         autorization
@@ -38,7 +38,7 @@ public class CreateAdresTest extends BaseTest {
     }
     @Test
     public void creatPublickAdresScoop(){
-        basePage.open("http://45.8.248.89:5500/");
+        basePage.open("http://81.163.27.121:5500/");
 
 
         autorization
@@ -53,7 +53,7 @@ public class CreateAdresTest extends BaseTest {
     }
     @Test
     public void creatPrivateAdres(){
-        basePage.open("http://45.8.248.89:5500/");
+        basePage.open("http://81.163.27.121:5500/");
 
 
         autorization
@@ -68,7 +68,7 @@ public class CreateAdresTest extends BaseTest {
     }
     @Test
     public void creatPrivateAdresLocker(){
-        basePage.open("http://45.8.248.89:5500/");
+        basePage.open("http://81.163.27.121:5500/");
 
 
         autorization
@@ -83,7 +83,7 @@ public class CreateAdresTest extends BaseTest {
     }
     @Test
     public void creatPrivateAdresScoop(){
-        basePage.open("http://45.8.248.89:5500/");
+        basePage.open("http://81.163.27.121:5500/");
 
 
         autorization
@@ -98,7 +98,7 @@ public class CreateAdresTest extends BaseTest {
     }
     @Test
     public void createPrivateGroupAdres(){
-        basePage.open("http://45.8.248.89:5500/");
+        basePage.open("http://81.163.27.121:5500/");
 
 
         autorization
@@ -113,7 +113,7 @@ public class CreateAdresTest extends BaseTest {
     }
     @Test
     public void createPrivateGroupLocker(){
-        basePage.open("http://45.8.248.89:5500/");
+        basePage.open("http://81.163.27.121:5500/");
 
 
         autorization
@@ -129,7 +129,7 @@ public class CreateAdresTest extends BaseTest {
     @Test
 
     public void createPrivateGroupScoop(){
-        basePage.open("http://45.8.248.89:5500/");
+        basePage.open("http://81.163.27.121:5500/");
 
 
         autorization
