@@ -8,11 +8,7 @@
     </test>
     <test verbose="2" preserve-order="true" name="Creat Adres">
         <classes>
-            <class name="tests.creatadres.CreateAdresTest">
-                <methods>
-                    <include name="loginTest"/>
-                </methods>
-            </class>
+            <class name="tests.creatadres.CreateAdresTest"/>
     </classes>
     </test>
 </suite>

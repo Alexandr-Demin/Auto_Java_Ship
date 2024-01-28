@@ -1,10 +1,19 @@
 package common;
 
+import io.qameta.allure.Attachment;
+
+import java.io.File;
+import java.io.IOException;
+
+import java.nio.file.Paths;;
+
 public class Config {
 
     public static final String PLATFORM_AND_BROWSER = "win_chrome";
     public static final int IMPLICIT_WAIT = 2;
     public static final int EXPLICIT_WAIT = 10;
+
+
 
 
 
