@@ -29,11 +29,11 @@ jobs:
           cache: maven
       - name: create_addresses
         if: "github.event.inputs.deployment_target == 'create_addresses'"
-        run: mvn clean test -Dtest=CreateAdresTest --allure generate target/allure-results --clean
+        run: mvn clean test -Dtest=CreateAdresTest, --allure generate target/allure-results --clean
 
       - name: click_required
         if: "github.event.inputs.deployment_target == 'click_required'"
-        run: mvn clean test -Dtest=ClickRequest --allure generate target/allure-results --clean
+        run: mvn clean test -Dtest=ClickRequest, --allure generate target/allure-results --clean
       - name: Store allure results
         uses: actions/upload-artifact@v3
         with:
