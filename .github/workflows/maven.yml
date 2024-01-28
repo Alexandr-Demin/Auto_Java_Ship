@@ -11,7 +11,9 @@ on:
         options:
           - create_addresses
           - click_required
-
+permissions:
+  contents: read
+  id-token: write
 
 jobs:
   tests:
