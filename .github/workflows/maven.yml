@@ -13,6 +13,7 @@ on:
           - click_required
 permissions:
   contents: read
+  pages: write
   id-token: write
 
 jobs:
