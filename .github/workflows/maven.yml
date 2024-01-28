@@ -1,10 +1,10 @@
-name: Allure Report CI1
+name: Allure Report CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "work" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "work" ]
 
 jobs:
   build:
