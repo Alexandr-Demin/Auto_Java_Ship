@@ -11,8 +11,6 @@ on:
         options:
           - create_addresses
           - click_required
-
-
 jobs:
   tests:
 
@@ -47,7 +45,7 @@ jobs:
         with:
           gh_pages: allure_history
           allure_results: allure_results
-          allure_history: allure_history
+          allure_history: allure_history_new
 
       - name: Publish test report
         uses: peaceiris/actions-gh-pages@v3
@@ -55,7 +53,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: allure_history
+          publish_dir: allure_history_new
 
 
 
