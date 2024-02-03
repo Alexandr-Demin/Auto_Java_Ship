@@ -2,9 +2,9 @@ name: Allure Report CI
 
 on:
   push:
-    branches: [ "work" ]
+    branches: [ "allure" ]
   pull_request:
-    branches: [ "work" ]
+    branches: [ "allure" ]
 
 jobs:
   build:
