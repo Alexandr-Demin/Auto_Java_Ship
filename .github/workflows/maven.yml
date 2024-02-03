@@ -1,10 +1,15 @@
 name: Allure Report CI
 
 on:
-  push:
-    branches: [ "allure" ]
-  pull_request:
-    branches: [ "allure" ]
+  workflow_dispatch:
+    inputs:
+      deployment_target:
+        description: Choose target
+        required: true
+        default:
+        type: choice
+        options:
+          - click_required
 
 jobs:
   build:
@@ -20,6 +25,7 @@ jobs:
           cache: maven
 
       - name: Run test
+        if: "github.event.inputs.deployment_target == 'click_required'"
         run: mvn test -Dtest="ClickRequestTests"
 
       - name: History test
