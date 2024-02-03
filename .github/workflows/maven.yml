@@ -1,16 +1,10 @@
 name: Regression test
 
 on:
-  workflow_dispatch:
-    inputs:
-      deployment_target:
-        description: Choose target
-        required: true
-        default:
-        type: choice
-        options:
-          - create_addresses
-          - click_required
+  push:
+    branches: [ "allure" ]
+  pull_request:
+    branches: [ "allure" ]
 jobs:
   tests:
 
