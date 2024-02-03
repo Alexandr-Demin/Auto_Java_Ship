@@ -31,7 +31,7 @@ jobs:
         run: mvn clean test -Dtest=CreateAdresTest
       - name: click_required
         if: "github.event.inputs.deployment_target == 'click_required'"
-        run: mvn clean test -Dtest=ClickRequest
+        run: mvn test
 
       - name: History test
         uses: actions/checkout@v3
