@@ -15,7 +15,7 @@ public class CliclRequest extends BasePage {
 
 
     public CliclRequest openRequestpage(){
-        waitElementWisible(driver.findElement(clickID));
+        waitElementWisible(driver.findElement(clickRequest));
         driver.findElement(clickRequest).click();
 //        driver.findElement(clickID).click();
         return this;
