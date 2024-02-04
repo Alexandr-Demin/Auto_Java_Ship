@@ -15,7 +15,7 @@ import static common.Config.PLATFORM_AND_BROWSER;
 
 
 public class CommonAction {
-    private static WebDriver driver = null;
+    public static WebDriver driver;
 
 
     private CommonAction(){
